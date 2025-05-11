@@ -89,8 +89,14 @@ char** createMap(int rows, int cols) {
 void drawView(char** map, int rows, int cols, CJ cj) {
     system("cls");
 
-    int startRow = max(0, cj.y - VIEW_HEIGHT / 2);
-    int startCol = max(0, cj.x - VIEW_WIDTH / 2);
+    int startRow = cj.y - VIEW_HEIGHT / 2;
+    int startCol = cj.x - VIEW_WIDTH / 2;
+
+    // Ajuste para que la vista no se salga del mapa
+    if (startRow < 0) startRow = 0;
+    if (startCol < 0) startCol = 0;
+    if (startRow + VIEW_HEIGHT > rows) startRow = rows - VIEW_HEIGHT;
+    if (startCol + VIEW_WIDTH > cols) startCol = cols - VIEW_WIDTH;
 
     for (int i = 0; i < VIEW_HEIGHT; ++i) {
         for (int j = 0; j < VIEW_WIDTH; ++j) {
@@ -98,42 +104,60 @@ void drawView(char** map, int rows, int cols, CJ cj) {
             int mapCol = startCol + j;
 
             bool drawn = false;
+
+            // Dibujar CJ
             if (mapRow == cj.y && mapCol == cj.x) {
                 cout << cj.symbol;
                 drawn = true;
             }
 
-            for (auto& p : peatones) {
-                if (p.vivo && mapRow == p.y && mapCol == p.x) {
-                    cout << 'P';
-                    drawn = true;
-                    break;
+            // Dibujar peatones
+            if (!drawn) {
+                for (int k = 0; k < peatones.size(); ++k) {
+                    if (peatones[k].vivo && mapRow == peatones[k].y && mapCol == peatones[k].x) {
+                        cout << 'P';
+                        drawn = true;
+                        break;
+                    }
                 }
             }
 
-            for (auto& d : dinero) {
-                if (mapRow == d.second && mapCol == d.first) {
-                    cout << '$';
-                    drawn = true;
-                    break;
+            // Dibujar dinero
+            if (!drawn) {
+                for (int k = 0; k < dinero.size(); ++k) {
+                    if (mapRow == dinero[k].second && mapCol == dinero[k].first) {
+                        cout << '$';
+                        drawn = true;
+                        break;
+                    }
                 }
             }
-            for (auto& c : coches) {
-                if (!c.ocupado && mapRow == c.y && mapCol == c.x) {
-                    cout << 'C';
-                    drawn = true;
-                    break;
+
+            // Dibujar coches
+            if (!drawn) {
+                for (int k = 0; k < coches.size(); ++k) {
+                    if (!coches[k].ocupado && mapRow == coches[k].y && mapCol == coches[k].x) {
+                        cout << 'C';
+                        drawn = true;
+                        break;
+                    }
                 }
             }
-            if (!drawn && mapRow < rows && mapCol < cols)
-                cout << map[mapRow][mapCol];
-            else if (!drawn)
-                cout << ' ';
+
+            // Dibujar mapa o espacio vacío
+            if (!drawn) {
+                if (mapRow >= 0 && mapRow < rows && mapCol >= 0 && mapCol < cols)
+                    cout << map[mapRow][mapCol];
+                else
+                    cout << ' ';
+            }
         }
         cout << '\n';
     }
+
     cout << "Dinero: " << dineroCJ << "\n";
 }
+
 
 bool canMove(char** map, int newY, int newX, int rows, int cols) {
     return newY >= 0 && newY < rows &&
@@ -161,12 +185,46 @@ Peaton crearPeaton(int rows, int cols, char** map) {
     return p;
 }
 
-void generarPeatones(char** map, int rows, int cols, int num) {
+void generarPeatonesPorIsla(char** map, int rows, int cols, int num1, int num2, int num3) {
     peatones.clear();
-    for (int i = 0; i < num; ++i) {
-        peatones.push_back(crearPeaton(rows, cols, map));
+
+    // Isla 1 (col < colMuro1)
+    for (int i = 0; i < num1; ++i) {
+        Peaton p;
+        do {
+            p.x = rand() % (colMuro1 - 2) + 1;
+            p.y = rand() % (rows - 2) + 1;
+        } while (map[p.y][p.x] != ' ');
+        p.vivo = true;
+        p.vertical = rand() % 2;
+        peatones.push_back(p);
+    }
+
+    // Isla 2 (entre muros)
+    for (int i = 0; i < num2; ++i) {
+        Peaton p;
+        do {
+            p.x = rand() % (colMuro2 - colMuro1 - 2) + colMuro1 + 1;
+            p.y = rand() % (rows - 2) + 1;
+        } while (map[p.y][p.x] != ' ');
+        p.vivo = true;
+        p.vertical = rand() % 2;
+        peatones.push_back(p);
+    }
+
+    // Isla 3 (col > colMuro2)
+    for (int i = 0; i < num3; ++i) {
+        Peaton p;
+        do {
+            p.x = rand() % (cols - colMuro2 - 2) + colMuro2 + 1;
+            p.y = rand() % (rows - 2) + 1;
+        } while (map[p.y][p.x] != ' ');
+        p.vivo = true;
+        p.vertical = rand() % 2;
+        peatones.push_back(p);
     }
 }
+
 
 void moverPeatones(char** map, CJ cj, int rows, int cols) {
     for (auto& p : peatones) {
@@ -243,24 +301,26 @@ void moveCJ(CJ& cj, char** map, int rows, int cols) {
 
     if (GetAsyncKeyState(0x45) & 0x8000) { // Tecla E
         if (!cjEnCoche) {
-            for (auto& c : coches) {
-                if (!c.ocupado && cj.x == c.x && cj.y == c.y) {
+            for (std::vector<Coche>::iterator it = coches.begin(); it != coches.end(); ++it) {
+                if (!it->ocupado && cj.x == it->x && cj.y == it->y && map[cj.y][cj.x] != 'X') {
                     cjEnCoche = true;
-                    c.ocupado = true;
+                    it->ocupado = true;
                     cj.symbol = 'O'; // símbolo dentro del coche
                     break;
                 }
             }
         }
+
         else {
             for (auto& c : coches) {
-                if (c.ocupado) {
+                if (c.ocupado && cj.x == c.x && cj.y == c.y) {
                     c.ocupado = false;
                     cjEnCoche = false;
-                    cj.symbol = 'v'; // vuelve a pie
+                    cj.symbol = 'v';
                     break;
                 }
             }
+
         }
     }
 }
@@ -281,7 +341,8 @@ Coche crearCoche(int rows, int cols, char** map) {
             if (d.first == c.x && d.second == c.y)
                 ocupado = true;
 
-    } while (map[c.y][c.x] != ' ' || ocupado);
+    } while (map[c.y][c.x] == 'X' || map[c.y][c.x] != ' ' || ocupado);
+
     c.ocupado = false;
     return c;
 }
@@ -308,7 +369,7 @@ int main() {
     cj.symbol = 'v';
 
     srand(time(0));
-    generarPeatones(map, rows, cols, numPeatones1);
+    generarPeatonesPorIsla(map, rows, cols, numPeatones1, numPeatones2, 4); // 4 es el d la isla 3
     generarCoches(map, rows, cols, 4);
 
     while (true) {
@@ -317,22 +378,23 @@ int main() {
         moveCJ(cj, map, rows, cols);
 
         // Peaje 1 (Los Santos -> San Fierro)
-        if (cj.x == colMuro1 && cj.y == filaPuente) {
-            if (dineroCJ < peaje1) {
-                cout << "¡No tienes suficiente dinero para cruzar a San Fierro!\n";
-                Sleep(2000);
-                exit(0);
-            }
+        if (cj.x == colMuro1 && cj.y == filaPuente && dineroCJ < peaje1) {
+            cout << "¡No tienes suficiente dinero para cruzar a San Fierro!\n";
+            Sleep(1000);
+            // Mover a CJ atrás para que no cruce el puente
+            cj.x--; // vuelve a la casilla anterior
         }
 
+
         // Peaje 2 (San Fierro -> Las Venturas)
-        if (cj.x == colMuro2 && cj.y == filaPuente) {
-            if (dineroCJ < peaje2) {
-                cout << "¡No tienes suficiente dinero para cruzar a Las Venturas!\n";
-                Sleep(2000);
-                exit(0);
-            }
+        if (cj.x == colMuro2 && cj.y == filaPuente && dineroCJ < peaje1) {
+            cout << "¡No tienes suficiente dinero para cruzar a San Fierro!\n";
+            Sleep(1000);
+            // Mover a CJ atrás para que no cruce el puente
+            cj.x--; // vuelve a la casilla anterior
         }
+
+
 
 
         if (cjEnCoche) {
@@ -353,7 +415,10 @@ int main() {
 
         for (int i = 0; i < dinero.size(); ++i) {
             if (!cjEnCoche && cj.x == dinero[i].first && cj.y == dinero[i].second) {
-                dineroCJ += rand() % maxDineroIsla + 1;
+                // Hacemos que haya un minimo de dinero para que siempre de para pasar a la siguiente isla
+                int dineroBase = (cj.x < colMuro1) ? peaje1 / numPeatones1 :
+                    (cj.x < colMuro2) ? peaje2 / numPeatones2 : 1;
+                dineroCJ += dineroBase + rand() % 3; // un pequeño extra aleatorio
                 dinero.erase(dinero.begin() + i);
                 break;
             }
