@@ -1,126 +1,246 @@
 #include <iostream>
 #include <fstream>
 #include <windows.h>
+#include <vector>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 
-
-// La vision del jugador, 20 casillas de ancho y 10 de alto
-const int ancho = 20;
-const int alto = 10;
-
-int filaStart;
-int columnaStart;
-int filaMapa;
-int columnaMapa;
+const int VIEW_WIDTH = 20;
+const int VIEW_HEIGHT = 10;
 
 struct CJ {
     int x, y;
-    char simbolo; // El simbolo que representa al jugador, ya sea >, <, v, ^
+    char symbol;
 };
 
-// Abre y lee el archivo de config 
-void leerArchivo(int& filas, int& columnas) {
+struct Peaton {
+    int x, y;
+    bool vertical;
+    bool vivo;
+};
+
+vector<Peaton> peatones;
+vector<pair<int, int>> dinero;
+
+int dineroCJ = 0;
+int maxDineroIsla = 100;
+int numPeatones = 6;
+
+void readConfig(int& rows, int& cols) {
     ifstream file("config.txt");
     if (!file.is_open()) {
-        cerr << "No se pudo abrir";
+        cerr << "No se pudo abrir config.txt\n";
         exit(1);
     }
 
     char sep;
-    file >> columnas >> sep >> filas;
+
+    // Línea 1: ancho;alto
+    file >> cols >> sep >> rows;
+
+    // Línea 2: peatonesLosSantos;dineroPeaje1;dineroMaxIsla1
+    int dummyPeaje;
+    file >> numPeatones >> sep >> dummyPeaje >> sep >> maxDineroIsla;
+
     file.close();
 }
 
-// Crea el mapa
-char** crearMapa(int rows, int cols) {
+char** createMap(int rows, int cols) {
     char** map = new char* [rows];
     for (int i = 0; i < rows; ++i) {
         map[i] = new char[cols];
         for (int j = 0; j < cols; ++j) {
             if (i == 0 || i == rows - 1 || j == 0 || j == cols - 1)
-                map[i][j] = 'X'; // bordes del mapa
+                map[i][j] = 'X';
             else
-                map[i][j] = ' '; // zona transitable
+                map[i][j] = ' ';
         }
     }
     return map;
 }
 
-// Dibuja lo que ve el jugador
-void dibujarVista(char** map, int rows, int cols, CJ cj) {
-    system("cls");  // Limpia la pantalla antes de dibujar la nueva vista, para que no se solape
-         
-    // Recorremos cada casilla visiblee, solo las visibles, por eso usamos alto y ancho en lugar de el tamaño real del mapa entero, el de config.txt
-    for (int i = 0; i < alto; ++i) {
-        for (int j = 0; j < ancho; ++j) {
+void drawView(char** map, int rows, int cols, CJ cj) {
+    system("cls");
 
-            // Calculamos la posición real del mapa que corresponde a esta casilla de la vista
-            int mapY = cj.y - alto / 2 + i;  // fila del mapa
-            int mapX = cj.x - ancho / 2 + j; // columna del mapa
+    int startRow = max(0, cj.y - VIEW_HEIGHT / 2);
+    int startCol = max(0, cj.x - VIEW_WIDTH / 2);
 
-            // Si esta posición es la misma que la del personaje, lo dibujamos
-            if (mapY == cj.y && mapX == cj.x)
-                cout << cj.simbolo;
-            // Si está dentro del mapa, dibujamos lo que haya en esa casilla (pared o espacio)
-            else if (mapY >= 0 && mapY < rows && mapX >= 0 && mapX < cols)
-                cout << map[mapY][mapX];
-          
-            else
+    for (int i = 0; i < VIEW_HEIGHT; ++i) {
+        for (int j = 0; j < VIEW_WIDTH; ++j) {
+            int mapRow = startRow + i;
+            int mapCol = startCol + j;
+
+            bool drawn = false;
+            if (mapRow == cj.y && mapCol == cj.x) {
+                cout << cj.symbol;
+                drawn = true;
+            }
+
+            for (auto& p : peatones) {
+                if (p.vivo && mapRow == p.y && mapCol == p.x) {
+                    cout << 'P';
+                    drawn = true;
+                    break;
+                }
+            }
+
+            for (auto& d : dinero) {
+                if (mapRow == d.second && mapCol == d.first) {
+                    cout << '$';
+                    drawn = true;
+                    break;
+                }
+            }
+
+            if (!drawn && mapRow < rows && mapCol < cols)
+                cout << map[mapRow][mapCol];
+            else if (!drawn)
                 cout << ' ';
         }
-        cout << '\n';  // Salto de línea después de cada fila
+        cout << '\n';
+    }
+    cout << "Dinero: " << dineroCJ << "\n";
+}
+
+bool canMove(char** map, int newY, int newX, int rows, int cols) {
+    return newY >= 0 && newY < rows &&
+        newX >= 0 && newX < cols &&
+        map[newY][newX] != 'X';
+}
+
+Peaton crearPeaton(int rows, int cols, char** map) {
+    Peaton p;
+    bool ocupado;
+    do {
+        p.x = rand() % (cols - 2) + 1;
+        p.y = rand() % (rows - 2) + 1;
+
+        ocupado = false;
+        for (auto& otro : peatones) {
+            if (otro.vivo && otro.x == p.x && otro.y == p.y) {
+                ocupado = true;
+                break;
+            }
+        }
+    } while (map[p.y][p.x] != ' ' || ocupado);
+    p.vertical = rand() % 2;
+    p.vivo = true;
+    return p;
+}
+
+void generarPeatones(char** map, int rows, int cols, int num) {
+    peatones.clear();
+    for (int i = 0; i < num; ++i) {
+        peatones.push_back(crearPeaton(rows, cols, map));
     }
 }
 
+void moverPeatones(char** map, CJ cj, int rows, int cols) {
+    for (auto& p : peatones) {
+        if (!p.vivo) continue;
 
+        int dx = abs(p.x - cj.x);
+        int dy = abs(p.y - cj.y);
+        if (dx <= 1 && dy <= 1) continue;  // Si CJ está cerca, no se mueve
 
-void moverCJ(CJ& cj, char** map, int rows, int cols) {
+        int nx = p.x, ny = p.y;
+        if (p.vertical) ny += (rand() % 2 ? 1 : -1);
+        else nx += (rand() % 2 ? 1 : -1);
+
+        bool libre = true;
+        for (auto& otro : peatones) {
+            if (&otro != &p && otro.vivo && otro.x == nx && otro.y == ny) {
+                libre = false;
+                break;
+            }
+        }
+        for (auto& d : dinero) {
+            if (d.first == nx && d.second == ny) {
+                libre = false;
+                break;
+            }
+        }
+
+        if (canMove(map, ny, nx, rows, cols) && libre) {
+            p.x = nx;
+            p.y = ny;
+        }
+    }
+}
+
+void moveCJ(CJ& cj, char** map, int rows, int cols) {
     if (GetAsyncKeyState(VK_UP) & 0x8000) {
-        if (map [cj.y - 1][cj.x] != 'X') {
+        if (canMove(map, cj.y - 1, cj.x, rows, cols)) {
             cj.y--;
-            cj.simbolo = '^';
+            cj.symbol = '^';
         }
     }
     else if (GetAsyncKeyState(VK_DOWN) & 0x8000) {
-        if (map[cj.y + 1][cj.x] != 'X') {
+        if (canMove(map, cj.y + 1, cj.x, rows, cols)) {
             cj.y++;
-            cj.simbolo = 'v';
+            cj.symbol = 'v';
         }
     }
     else if (GetAsyncKeyState(VK_LEFT) & 0x8000) {
-        if (map[cj.y][cj.x - 1] != 'X') {
+        if (canMove(map, cj.y, cj.x - 1, rows, cols)) {
             cj.x--;
-            cj.simbolo = '<';
+            cj.symbol = '<';
         }
     }
     else if (GetAsyncKeyState(VK_RIGHT) & 0x8000) {
-        if (map[cj.y][cj.x + 1] != 'X') {
+        if (canMove(map, cj.y, cj.x + 1, rows, cols)) {
             cj.x++;
-            cj.simbolo = '>';
+            cj.symbol = '>';
+        }
+    }
+
+    if (GetAsyncKeyState(VK_SPACE) & 0x8000) {
+        for (auto& p : peatones) {
+            if (p.vivo && abs(cj.x - p.x) <= 1 && abs(cj.y - p.y) <= 1) {
+                p.vivo = false;
+                dinero.push_back({ p.x, p.y });
+
+                // Regenerar nuevo peatón
+                peatones.push_back(crearPeaton(rows, cols, map));
+                break;
+            }
         }
     }
 }
 
 int main() {
     int rows, cols;
-    leerArchivo(rows, cols);
+    readConfig(rows, cols);
 
-    char** map = crearMapa(rows, cols);
+    char** map = createMap(rows, cols);
 
     CJ cj;
-    cj.x = cols / 4;  // La posicion dodne empieza, el medio
+    cj.x = cols / 4;
     cj.y = rows / 2;
-    cj.simbolo = 'v';
+    cj.symbol = 'v';
+
+    srand(time(0));
+    generarPeatones(map, rows, cols, numPeatones);
 
     while (true) {
         if (GetAsyncKeyState(VK_ESCAPE) & 0x8000) break;
 
-        moverCJ(cj, map, rows, cols);
-        dibujarVista(map, rows, cols, cj);
+        moveCJ(cj, map, rows, cols);
+        moverPeatones(map, cj, rows, cols);
+        drawView(map, rows, cols, cj);
+
+        for (int i = 0; i < dinero.size(); ++i) {
+            if (cj.x == dinero[i].first && cj.y == dinero[i].second) {
+                dineroCJ += rand() % maxDineroIsla + 1;
+                dinero.erase(dinero.begin() + i);
+                break;
+            }
+        }
+
         Sleep(100);
     }
 
-    // Liberar memoria
     for (int i = 0; i < rows; ++i)
         delete[] map[i];
     delete[] map;
