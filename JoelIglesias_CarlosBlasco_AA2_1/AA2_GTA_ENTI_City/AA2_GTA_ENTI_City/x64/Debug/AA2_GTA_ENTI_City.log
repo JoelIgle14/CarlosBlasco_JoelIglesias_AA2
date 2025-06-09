@@ -3,8 +3,8 @@
   Map.cpp
   Player.cpp
   main.cpp
-C:\Users\joel9\OneDrive\Escritorio\GTA\JoelIglesias_CarlosBlasco_AA2_1\AA2_GTA_ENTI_City\AA2_GTA_ENTI_City\main.cpp(32,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\Usuario\Documents\GitHub\CarlosBlasco_JoelIglesias_AA2\JoelIglesias_CarlosBlasco_AA2_1\AA2_GTA_ENTI_City\AA2_GTA_ENTI_City\main.cpp(32,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
   Vehicle.cpp
   Walker.cpp
   Generando código...
-  AA2_GTA_ENTI_City.vcxproj -> C:\Users\joel9\OneDrive\Escritorio\GTA\JoelIglesias_CarlosBlasco_AA2_1\AA2_GTA_ENTI_City\x64\Debug\AA2_GTA_ENTI_City.exe
+  AA2_GTA_ENTI_City.vcxproj -> C:\Users\Usuario\Documents\GitHub\CarlosBlasco_JoelIglesias_AA2\JoelIglesias_CarlosBlasco_AA2_1\AA2_GTA_ENTI_City\x64\Debug\AA2_GTA_ENTI_City.exe
