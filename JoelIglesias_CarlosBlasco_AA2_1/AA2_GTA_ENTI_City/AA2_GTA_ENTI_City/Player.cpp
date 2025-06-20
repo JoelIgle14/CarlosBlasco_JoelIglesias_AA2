@@ -10,9 +10,30 @@
 #include <iostream>
 using namespace std;
 
-bool cjEnCoche = false;
-int dineroCJ = 0;
-Coche* cocheActual = nullptr;  // Nuevo: coche que CJ conduce
+CJ::CJ(int startX, int startY)
+    : x(startX), y(startY), symbol('v'), vida(100), ataque(50), cjEnCoche(false), dinero(0), cocheActual(nullptr) {}
+
+bool CJ::estaVivo() const { return vida > 0; }
+bool CJ::estaEnCoche() const { return cjEnCoche; }
+Coche* CJ::getCocheActual() const { return cocheActual; }
+void CJ::añadirDinero(int cantidad) { dinero += cantidad; }
+void CJ::reducirVida(int danyo) { vida -= danyo; }
+
+
+void CJ::setX(int val) { x = val; }
+void CJ::setY(int val) { y = val; }
+void CJ::setVida(int val) { vida = val; }
+void CJ::setAtaque(int val) { ataque = val; }
+void CJ::setSymbol(char s) { symbol = s; }
+
+int CJ::getX() const { return x; }
+int CJ::getY() const { return y; }
+int CJ::getVida() const { return vida; }
+int CJ::getAtaque() const { return ataque; }
+int CJ::getDinero() const { return dinero; }
+char CJ::getSymbol() const { return symbol; }
+
+
 
 void CJ::move(char** map, int rows, int cols) {
     // Movimiento
@@ -121,7 +142,7 @@ void CJ::move(char** map, int rows, int cols) {
                         else
                             cantidad = maxD3 / 2 + rand() % (maxD3 / 2 + 1);
 
-                        añadirDinero(x, y, cantidad);
+                        añadirDinero(cantidad);
                         std::cout << "Has atropellat un peatón. Ha deixat $" << cantidad << " a (" << nx << "," << ny << ")\n";
                         break;
                     }
@@ -157,7 +178,7 @@ void CJ::move(char** map, int rows, int cols) {
                     else
                         cantidad = maxD3 / 2 + rand() % (maxD3 / 2 + 1);
 
-                    añadirDinero(x, y, cantidad);
+                    añadirDinero(cantidad);
                     añadirPeaton(crearPeaton(rows, cols, map));
                 }
                 break;
@@ -198,15 +219,16 @@ void CJ::move(char** map, int rows, int cols) {
         }
     }
 
-    // Recoger dinero
     for (int i = 0; i < numDinero; ++i) {
-        if (!cjEnCoche && x == dinero[i].x && y == dinero[i].y) {
-            dineroCJ += dinero[i].cantidad;
-            std::cout << "Has recollit $" << dinero[i].cantidad << ". Total: $" << dineroCJ << "\n";
+        if (!cjEnCoche && x == ::dinero[i].x && y == ::dinero[i].y) {
+            this->dinero += ::dinero[i].cantidad;
+            std::cout << "Has recollit $" << ::dinero[i].cantidad << ". Total: $" << this->dinero << "\n";
             eliminarDineroEn(i);
             break;
         }
     }
+
+
 
     // Ataques de peatones agresivos
     for (int i = 0; i < numPeatones; ++i) {
@@ -239,8 +261,8 @@ void CJ::move(char** map, int rows, int cols) {
     // Pago de peajes
     if (y == filaPuente) {
         if (x == colMuro1 && !peaje1Pagado) {
-            if (dineroCJ >= peaje1) {
-                dineroCJ -= peaje1;
+            if (dinero >= peaje1) {
+                dinero -= peaje1;
                 peaje1Pagado = true;
                 map[y][x] = ' ';
                 std::cout << "Peaje 1 pagado. ¡Puedes cruzar a San Fierro!\n";
@@ -252,8 +274,8 @@ void CJ::move(char** map, int rows, int cols) {
             }
         }
         else if (x == colMuro2 && !peaje2Pagado) {
-            if (dineroCJ >= peaje2) {
-                dineroCJ -= peaje2;
+            if (dinero >= peaje2) {
+                dinero -= peaje2;
                 peaje2Pagado = true;
                 map[y][x] = ' ';
                 std::cout << "Peaje 2 pagado. ¡Puedes cruzar a Las Venturas!\n";

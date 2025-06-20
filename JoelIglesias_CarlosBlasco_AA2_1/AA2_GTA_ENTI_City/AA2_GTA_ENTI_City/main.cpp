@@ -32,12 +32,13 @@ int main() {
     srand(time(0));
     char** map = createMap(rows, cols);
 
-    CJ cj;
-    cj.x = cols / 4;
-    cj.y = rows / 2;
-    cj.symbol = 'v';
-    cj.vida = vidaCJ;
-    cj.ataque = ataqueCJ;
+    CJ cj(cols / 4, rows / 2);
+    //cj.setX(cols / 4);
+    //cj.setY(rows / 2);
+    cj.setSymbol('v');
+    cj.setVida(vidaCJ);
+    cj.setAtaque(ataqueCJ);
+
 
     generarPeatonesPorIsla(map, rows, cols, colMuro1, colMuro2, numP1, numP2, numP3);
     crearBigSmoke(map, rows, cols, colMuro2);

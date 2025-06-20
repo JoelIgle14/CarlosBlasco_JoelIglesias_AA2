@@ -99,8 +99,8 @@ void moverPeatones(char** map, const CJ& cj, int rows, int cols) {
         Peaton& p = peatones[i];
         if (!p.vivo) continue;
 
-        int dx = abs(p.x - cj.x);
-        int dy = abs(p.y - cj.y);
+        int dx = abs(p.x - cj.getX());
+        int dy = abs(p.y - cj.getY());
         if (dx <= 1 && dy <= 1) continue;
 
         int nx = p.x, ny = p.y;

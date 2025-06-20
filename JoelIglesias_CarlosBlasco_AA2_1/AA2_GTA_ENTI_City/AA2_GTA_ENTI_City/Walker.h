@@ -1,8 +1,10 @@
 #ifndef WALKER_H
 #define WALKER_H
 
-#include "Player.h"  
-#include <ctime> 
+#include <ctime>
+
+// Forward declaration de CJ, només si `CJ` és una classe o struct.
+class CJ;
 
 struct Peaton {
     int x, y;
@@ -14,7 +16,6 @@ struct Peaton {
     bool atacando;
     clock_t ultimoAtaque;
 };
-
 
 Peaton crearPeaton(int rows, int cols, char** map);
 

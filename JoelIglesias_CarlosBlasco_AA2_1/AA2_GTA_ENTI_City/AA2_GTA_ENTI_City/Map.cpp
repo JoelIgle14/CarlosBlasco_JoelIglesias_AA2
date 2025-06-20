@@ -44,8 +44,8 @@ char** createMap(int rows, int cols) {
 void drawView(char** map, int rows, int cols, CJ& cj) {
     system("cls");
 
-    int startRow = cj.y - VIEW_HEIGHT / 2;
-    int startCol = cj.x - VIEW_WIDTH / 2;
+    int startRow = cj.getY() - VIEW_HEIGHT / 2;
+    int startCol = cj.getX() - VIEW_WIDTH / 2;
 
     if (startRow < 0) startRow = 0;
     if (startCol < 0) startCol = 0;
@@ -59,8 +59,8 @@ void drawView(char** map, int rows, int cols, CJ& cj) {
 
             bool drawn = false;
 
-            if (mapRow == cj.y && mapCol == cj.x) {
-                cout << cj.symbol;
+            if (mapRow == cj.getY() && mapCol == cj.getX()) {
+                cout << cj.getSymbol();
                 drawn = true;
             }
 
@@ -128,8 +128,8 @@ void drawView(char** map, int rows, int cols, CJ& cj) {
         cout << '\n';
     }
 
-    cout << "Dinero: " << dineroCJ << "\n";
-    cout << "Vida: " << cj.vida << "\n";
+    cout << "Dinero: " << cj.getDinero() << "\n";
+    cout << "Vida: " << cj.getVida() << "\n";
 }
 
 bool canMove(char** map, int newY, int newX, int rows, int cols) {

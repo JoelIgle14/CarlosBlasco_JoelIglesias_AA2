@@ -1,65 +1,65 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\",
+  "WorkspaceRootPath": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Vehicle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Vehicle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Vehicle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Vehicle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Walker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Walker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Walker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Walker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Globals.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Globals.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Walker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Walker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\GameState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\GameState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Globals.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Globals.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Walker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Walker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Config.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Config.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Config.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Config.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Config.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\GameState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\GameState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\config.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Vehicle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Vehicle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Config.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Config.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Globals.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Globals.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Vehicle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Vehicle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Globals.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\Globals.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\config.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{AA25B785-67A3-4AB6-9898-AB2727D139A8}|AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City.vcxproj|solutionrelative:AA2_GTA_ENTI_City\\config.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
@@ -70,17 +70,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Config.h",
+              "DocumentMoniker": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Config.h",
+              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Config.h",
+              "ToolTip": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Config.h",
+              "RelativeToolTip": "AA2_GTA_ENTI_City\\Config.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-06T09:08:32.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Map.cpp",
+              "DocumentMoniker": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Map.cpp",
+              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Map.cpp",
+              "ToolTip": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Map.cpp",
+              "RelativeToolTip": "AA2_GTA_ENTI_City\\Map.cpp",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAAC8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-07T01:33:55.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\main.cpp",
               "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\main.cpp",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\main.cpp",
+              "ToolTip": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\main.cpp",
               "RelativeToolTip": "AA2_GTA_ENTI_City\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAACQAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-07T02:24:24.091Z",
               "EditorCaption": ""
@@ -88,136 +114,75 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Walker.cpp",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Walker.cpp",
-              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Walker.cpp",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Walker.cpp",
-              "RelativeToolTip": "AA2_GTA_ENTI_City\\Walker.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-07T02:24:00.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Walker.h",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Walker.h",
-              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Walker.h",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Walker.h",
-              "RelativeToolTip": "AA2_GTA_ENTI_City\\Walker.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-07T02:24:35.474Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Player.cpp",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Player.cpp",
+              "DocumentMoniker": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Player.cpp",
               "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Player.cpp",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Player.cpp",
+              "ToolTip": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Player.cpp",
               "RelativeToolTip": "AA2_GTA_ENTI_City\\Player.cpp",
-              "ViewState": "AgIAAOcAAAAAAAAAAADwvwwBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAAAOQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-06T09:05:33.862Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Player.h",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Player.h",
+              "DocumentMoniker": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Player.h",
               "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Player.h",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Player.h",
+              "ToolTip": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Player.h",
               "RelativeToolTip": "AA2_GTA_ENTI_City\\Player.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-06-06T09:05:40.476Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Vehicle.cpp",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Vehicle.cpp",
-              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Vehicle.cpp",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Vehicle.cpp",
-              "RelativeToolTip": "AA2_GTA_ENTI_City\\Vehicle.cpp",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Walker.h",
+              "DocumentMoniker": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Walker.h",
+              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Walker.h",
+              "ToolTip": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Walker.h",
+              "RelativeToolTip": "AA2_GTA_ENTI_City\\Walker.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-20T15:41:07.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Walker.cpp",
+              "DocumentMoniker": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Walker.cpp",
+              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Walker.cpp",
+              "ToolTip": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Walker.cpp",
+              "RelativeToolTip": "AA2_GTA_ENTI_City\\Walker.cpp",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAAJsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-06T09:08:22.055Z",
+              "WhenOpened": "2025-06-20T15:52:24.244Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Globals.h",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Globals.h",
-              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Globals.h",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Globals.h",
-              "RelativeToolTip": "AA2_GTA_ENTI_City\\Globals.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAUAAAAAAAAAA==",
+              "Title": "GameState.h",
+              "DocumentMoniker": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\GameState.h",
+              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\GameState.h",
+              "ToolTip": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\GameState.h",
+              "RelativeToolTip": "AA2_GTA_ENTI_City\\GameState.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-07T02:29:55.337Z",
+              "WhenOpened": "2025-06-20T15:53:04.965Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Globals.cpp",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Globals.cpp",
-              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Globals.cpp",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Globals.cpp",
-              "RelativeToolTip": "AA2_GTA_ENTI_City\\Globals.cpp",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-06T16:25:56.656Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GameState.h",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\GameState.h",
-              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\GameState.h",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\GameState.h",
-              "RelativeToolTip": "AA2_GTA_ENTI_City\\GameState.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-07T01:08:09.996Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Map.cpp",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Map.cpp",
-              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Map.cpp",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Map.cpp",
-              "RelativeToolTip": "AA2_GTA_ENTI_City\\Map.cpp",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-07T01:33:55.128Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Config.cpp",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Config.cpp",
-              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Config.cpp",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Config.cpp",
-              "RelativeToolTip": "AA2_GTA_ENTI_City\\Config.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-06T09:08:49.825Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Vehicle.h",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Vehicle.h",
+              "DocumentMoniker": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Vehicle.h",
               "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Vehicle.h",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Vehicle.h",
+              "ToolTip": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Vehicle.h",
               "RelativeToolTip": "AA2_GTA_ENTI_City\\Vehicle.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -226,35 +191,75 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Config.cpp",
+              "DocumentMoniker": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Config.cpp",
+              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Config.cpp",
+              "ToolTip": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Config.cpp",
+              "RelativeToolTip": "AA2_GTA_ENTI_City\\Config.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-06T09:08:49.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Globals.cpp",
+              "DocumentMoniker": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Globals.cpp",
+              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Globals.cpp",
+              "ToolTip": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Globals.cpp",
+              "RelativeToolTip": "AA2_GTA_ENTI_City\\Globals.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-06T16:25:56.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Config.h",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Config.h",
-              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Config.h",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Config.h",
-              "RelativeToolTip": "AA2_GTA_ENTI_City\\Config.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "Title": "Vehicle.cpp",
+              "DocumentMoniker": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Vehicle.cpp",
+              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Vehicle.cpp",
+              "ToolTip": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Vehicle.cpp",
+              "RelativeToolTip": "AA2_GTA_ENTI_City\\Vehicle.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-06T09:08:22.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Map.h",
+              "DocumentMoniker": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Map.h",
+              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Map.h",
+              "ToolTip": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Map.h",
+              "RelativeToolTip": "AA2_GTA_ENTI_City\\Map.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-06T09:08:32.366Z"
+              "WhenOpened": "2025-06-06T09:04:52.688Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Map.h",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Map.h",
-              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Map.h",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Map.h",
-              "RelativeToolTip": "AA2_GTA_ENTI_City\\Map.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Title": "Globals.h",
+              "DocumentMoniker": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Globals.h",
+              "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\Globals.h",
+              "ToolTip": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\Globals.h",
+              "RelativeToolTip": "AA2_GTA_ENTI_City\\Globals.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-06T09:04:52.688Z"
+              "WhenOpened": "2025-06-20T15:33:54.92Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "config.txt",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\config.txt",
+              "DocumentMoniker": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\config.txt",
               "RelativeDocumentMoniker": "AA2_GTA_ENTI_City\\config.txt",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\config.txt",
+              "ToolTip": "C:\\Users\\joel9\\OneDrive\\Escritorio\\1rDDVJA\\Exercicis programacio\\CarlosBlasco_JoelIglesias_AA2\\JoelIglesias_CarlosBlasco_AA2_1\\AA2_GTA_ENTI_City\\AA2_GTA_ENTI_City\\config.txt",
               "RelativeToolTip": "AA2_GTA_ENTI_City\\config.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
